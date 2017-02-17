@@ -14,8 +14,14 @@ select * from aaaa;
 .separator ,
 .import sample.csv TEST_TABLE
 
-players(player_id int primary key, team_id int, player_name text, player_rating real, kd_ratio real, average_kill real, average_death real, average_asist real);
+players(player_id int, team_id int, player_name text, player_rating real, kd_ratio real, average_kill real, average_death real, average_asist real);
+
+csvを流し込むかdb置き換え
 
 
 select player_id, team_id, player_name from players;
+
+team_id,map_id,win,lose(1,cache 2,dust2 3,mirage 4,inferno 5,nuke 6,train 7,cobblestone 8,overpass)(BIGとNorthとRogueとiGame.comとvega Squadronが存在していない)
+
+create table map(team_id int, map_id int, win int, lose int);
 
