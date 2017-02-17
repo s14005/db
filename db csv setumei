@@ -1,0 +1,21 @@
+.mode csv
+.output result.csv
+select * from aaaaa;
+
+or
+
+.headers on
+.mode csv
+.output result.csv
+select * from aaaa;
+
+
+.show
+.separator ,
+.import sample.csv TEST_TABLE
+
+players(player_id int primary key, team_id int, player_name text, player_rating real, kd_ratio real, average_kill real, average_death real, average_asist real);
+
+
+select player_id, team_id, player_name from players;
+
